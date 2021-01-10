@@ -13,14 +13,14 @@ public class Main {
         TransportArrayList.add(BugattiChiron);
         TransportArrayList.add(SCMaglev);
 
-        int fastestSpeed = 0;
+        int SlowestSpeed = 500;
 
         for(Transport transport : TransportArrayList) {
-            if(transport.getSpeed() > fastestSpeed) {
-                fastestSpeed = transport.getSpeed();
+            if(transport.getSpeed() > SlowestSpeed) {
+                SlowestSpeed = transport.getSpeed();
             }
         }
 
-        System.out.println(fastestSpeed);
+        System.out.println(SlowestSpeed);
     }
 }
